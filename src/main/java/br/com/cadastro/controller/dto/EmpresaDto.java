@@ -8,7 +8,7 @@ public class EmpresaDto {
 
 	private Long id;
 	private String cnpj;
-	private String empresa;
+	private String nomeEmpresa;
 	private String nomeUsuario;
 	private String email;
 	
@@ -17,7 +17,7 @@ public class EmpresaDto {
 	public EmpresaDto(Empresa empresa) {
 		this.id = empresa.getId();
 		this.cnpj = empresa.getCnpj();
-		this.empresa = empresa.getNomeEmpresa();
+		this.nomeEmpresa = empresa.getNomeEmpresa();
 		this.nomeUsuario = empresa.getNomeUsuario();
 		this.email=empresa.getEmail();
 	}
@@ -41,11 +41,11 @@ public class EmpresaDto {
 	}
 
 	public String getEmpresa() {
-		return empresa;
+		return nomeEmpresa;
 	}
 
 	public void setEmpresa(String empresa) {
-		this.empresa = empresa;
+		this.nomeEmpresa = empresa;
 	}
 
 	public String getNomeUsuario() {
